@@ -19,6 +19,7 @@ body{
 .body{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
 }
 .body h1{
@@ -28,24 +29,22 @@ body{
     text-align: center;
     width: 100%;
 }
-.form{
-    width: 85%;
-    position: relative;
-}
 form{
-    position: absolute;
-    width: 95%;
+    width: 80vw;
+    height: 45vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     border: 2px solid orange;
-    padding: 1rem;
+    padding: 20px;
+    position: relative;
 }
 table{
-    width: 85%;
+    position: absolute;
+    width: 80%;
+    height: 80%;
     border-collapse:collapse;
     border: 2px solid black;
-    padding: 0.5rem;
 }
 table td{
     padding: 0.5rem;
@@ -61,6 +60,8 @@ input{
     font-size: 1rem;
 }
 button{
+    position: absolute;
+    bottom: 0%;
     width: max-content;
     font-weight: bold;
     padding: 0.5rem;
