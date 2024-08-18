@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STUDENT FORM</title>
+    <!--<link rel="stylesheet" href="form.css">-->
+    <style>
+        *{
+    padding: 0%;
+    margin: 0%;
+}
+body{
+    height: 100vh;
+    width:100vw;
+    background-color: blanchedalmond;
+    overflow: hidden;
+}
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.body h1{
+    background-color: cornflowerblue;
+    margin-bottom: 1rem;
+    padding: 0.6rem;
+    text-align: center;
+    width: 100%;
+}
+.form{
+    width: 85%;
+    position: relative;
+}
+form{
+    position: absolute;
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid orange;
+    padding: 1rem;
+}
+table{
+    width: 85%;
+    border-collapse:collapse;
+    border: 2px solid black;
+    padding: 0.5rem;
+}
+table td{
+    padding: 0.5rem;
+    border: 2px solid black;
+}
+label{
+    padding: 0.5rem;
+}
+input{
+    background-color: transparent;
+    border: 1px solid black;
+    padding: 3px;
+    font-size: 1rem;
+}
+button{
+    width: max-content;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin:  0.5rem;
+}
+    </style>
+</head>
+<body>
+    <div class="body">
+        <h1>STUDENT FORM</h1>
+        <div class="form">
+            <form>
+                <table>
+                    <tr>
+                        <td>
+                            <label>Name</label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Age</label>
+                        </td>
+                        <td>
+                            <input type="text">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Gender</label>
+                        </td>
+                        <td>
+                            <label>Male
+                                <input type="radio" name="ab" value="male">
+                            </label>
+                            <label>Female
+                                <input type="radio" name="ab" value="Female">
+                            </label> 
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Course</label>
+                        </td>
+                        <td>
+                            <select id="course">
+                                <option value="HTML">HTML</option>
+                                <option value="CSS">CSS</option>
+                                <option value="JS">JS</option>
+                            </select>            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>E-Mail</label>
+                        </td>
+                        <td>
+                            <input type="email">
+                        </td>
+                    </tr>
+                </table>
+                <button value="Sumbit">Sumbit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
